@@ -4,7 +4,7 @@
 set +e
 
 # xwayland dpi scale
-echo "Xft.dpi: 140" | xrdb -merge #dpi缩放
+echo "Xft.dpi: 120" | xrdb -merge #dpi缩放
 # xrdb merge ~/.Xresources >/dev/null 2>&1
 
 # noctalia shell

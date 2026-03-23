@@ -33,6 +33,7 @@ alias lsl="ls -l --no-permissions --no-user --no-time "
 alias tree="ls --tree "
 # alias ls="ls -oh --color "
 
+alias dm="yadm"
 alias ed="nvim"
 alias sued="sudoedit"
 # alias ed="emacsclient -t "

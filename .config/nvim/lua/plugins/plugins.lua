@@ -142,6 +142,25 @@ return {
     end,
   },
   {
+    "mfussenegger/nvim-dap",
+    opts = function()
+      local dap = require("dap")
+      dap.configurations.zenc = dap.configurations.c
+    end,
+  },
+  {
+    "rcarriga/nvim-dap-ui",
+    keys = {
+      {
+        "<leader>de",
+        function()
+          require("dapui").eval(nil, { enter = true })
+        end,
+        desc = "Eval (with focus)",
+      },
+    },
+  },
+  {
     "jake-stewart/multicursor.nvim",
     lazy = false,
     config = function()

@@ -19,7 +19,7 @@ source /usr/share/cachyos-zsh-config/cachyos-config.zsh
 
 export TIME_STYLE=long-iso
 
-alias s="sudo"
+alias s="sudo -E "
 alias pc="sudo pacman"
 alias ls="eza -1 --group-directories-first --icons --time-style=long-iso "
 alias lsl="ls -l --no-permissions --no-user --no-time "
@@ -42,11 +42,20 @@ alias gcc-asan="LANG=Compiler gcc -g -Og -O0 -fsanitize=address -fno-omit-frame-
 export GDBHISTFILE=~/.gdb_history
 
 export PATH=~/.nimble/bin:$PATH
-# export PATH=/opt/raylib/lib:$PATH
+
+export PATH=~/.local/bin:$PATH
+export C_INCLUDE_PATH=~/.local/include:$C_INCLUDE_PATH
+export LIBRARY_PATH=~/.local/lib:$LIBRARY_PATH
+export LD_LIBRARY_PATH=~/.local/lib:$LD_LIBRARY_PATH
+
+export C_INCLUDE_PATH=$C_INCLUDE_PATH:/opt/raylib/include
+export LIBRARY_PATH=$LIBRARY_PATH:/opt/raylib/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/raylib/lib
 
 # alias tclsh="rlwrap -r -c tclsh"
 
 export PATH=$PATH:.
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:.
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 autoload -U compinit; compinit

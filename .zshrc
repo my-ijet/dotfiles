@@ -20,11 +20,15 @@ source /usr/share/cachyos-zsh-config/cachyos-config.zsh
 export TIME_STYLE=long-iso
 
 alias s="sudo -E "
-alias pc="sudo pacman"
+alias pc="sudo pacman "
+alias update="yay -Syu "
+
 alias ls="eza -1 --group-directories-first --icons --time-style=long-iso "
 alias lsl="ls -l --no-permissions --no-user --no-time "
 alias tree="ls --tree "
 # alias ls="ls -oh --color "
+
+alias mkdir="mkdir -p "
 
 alias dm="yadm"
 alias ed="nvim"

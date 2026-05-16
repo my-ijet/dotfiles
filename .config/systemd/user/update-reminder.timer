@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Weekly Arch Linux Update Reminder
+
+[Timer]
+OnCalendar=weekly
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+

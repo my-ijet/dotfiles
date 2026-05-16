@@ -1,0 +1,7 @@
+[Unit]
+Description=Weekly Arch Linux Update Reminder
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/update-reminder.sh
+

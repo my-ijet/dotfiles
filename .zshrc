@@ -19,29 +19,32 @@ source /usr/share/cachyos-zsh-config/cachyos-config.zsh
 
 export TIME_STYLE=long-iso
 
-alias s="sudo -E "
-alias pc="sudo pacman "
-alias update="yay -Syu "
+alias s="sudo -E"
 
-alias ls="eza -1 --group-directories-first --icons --time-style=long-iso "
-alias lsl="ls -l --no-permissions --no-user --no-time "
-alias tree="ls --tree "
-# alias ls="ls -oh --color "
+alias update="yay -Syu"
+alias ipkg="yay -S"
+alias rmpkg="yay -Rsn"
+alias cleanup="yay -Rsn $(yay -Qtdq)"
 
-alias mkdir="mkdir -p "
+alias ls="eza -1 --group-directories-first --icons --time-style=long-iso"
+alias lsl="ls -l --no-permissions --no-user --no-time"
+alias tree="ls --tree"
+# alias ls="ls -oh --color"
+
+alias mkdir="mkdir -p"
 
 alias dm="yadm"
 alias ed="nvim"
 alias sued="sudoedit"
-# alias ed="emacsclient -t "
-# alias ed="emacs -nw "
+# alias ed="emacsclient -t"
+# alias ed="emacs -nw"
 alias emacs-doom="~/.config/emacs/bin/doom"
 
-# alias tcc="LANG=Compiler tcc -Wall "
-alias clang="LANG=Compiler clang $CFLAGS $LDFLAGS "
-alias clang-asan="LANG=Compiler clang -g -Og -O0 -fsanitize=address -fno-omit-frame-pointer "
-alias gcc="LANG=Compiler gcc $CFLAGS $LDFLAGS "
-alias gcc-asan="LANG=Compiler gcc -g -Og -O0 -fsanitize=address -fno-omit-frame-pointer "
+# alias tcc="LANG=Compiler tcc -Wall"
+alias clang="LANG=Compiler clang $CFLAGS $LDFLAGS"
+alias clang-asan="LANG=Compiler clang -g -Og -O0 -fsanitize=address -fno-omit-frame-pointer"
+alias gcc="LANG=Compiler gcc $CFLAGS $LDFLAGS"
+alias gcc-asan="LANG=Compiler gcc -g -Og -O0 -fsanitize=address -fno-omit-frame-pointer"
 
 export GDBHISTFILE=~/.gdb_history
 

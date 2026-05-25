@@ -21,10 +21,12 @@ export TIME_STYLE=long-iso
 
 alias s="sudo -E"
 
-alias update="yay -Syu"
-alias ipkg="yay -S"
-alias rmpkg="yay -Rsn"
-alias cleanup="yay -Rsn $(yay -Qtdq)"
+alias pkgupd="yay -Syu"
+alias pkgi="yay -S"
+alias pkgrm="yay -Rsn"
+alias pkgcleanup="yay -Rsn $(yay -Qtdq)"
+alias pkgcleancache="sudo pacman -Scc"
+alias pacmanfix="sudo rm /var/lib/pacman/db.lck"
 
 alias ls="eza -1 --group-directories-first --icons --time-style=long-iso"
 alias lsl="ls -l --no-permissions --no-user --no-time"
@@ -49,6 +51,7 @@ alias gcc-asan="LANG=Compiler gcc -g -Og -O0 -fsanitize=address -fno-omit-frame-
 export GDBHISTFILE=~/.gdb_history
 
 export PATH=~/.nimble/bin:$PATH
+export PATH=~/.cargo/bin:$PATH
 
 export PATH=~/.local/bin:$PATH
 export C_INCLUDE_PATH=~/.local/include:$C_INCLUDE_PATH

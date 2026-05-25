@@ -1,4 +1,5 @@
 #!/bin/bash
+
 ACTION=$(notify-send \
   -u critical \
   -A "update=Обновить" \

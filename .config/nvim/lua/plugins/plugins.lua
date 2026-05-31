@@ -97,6 +97,9 @@ return {
   -- },
 
   {
+    "oils-for-unix/oils.vim",
+  },
+  {
     "alaviss/nim.nvim",
     ft = { "nim", "nims", "nimble" },
     config = function()

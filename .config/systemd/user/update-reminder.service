@@ -4,6 +4,5 @@ After=graphical-session.target
 
 [Service]
 Type=oneshot
-Environment=XDG_RUNTIME_DIR=/run/user/%U
 ExecStart=%h/.local/bin/update-reminder.sh
 

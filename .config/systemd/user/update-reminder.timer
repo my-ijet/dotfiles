@@ -3,6 +3,7 @@ Description=Run Weekly Arch Linux Update Reminder
 
 [Timer]
 OnCalendar=weekly
+RandomizedDelaySec=300
 Persistent=true
 
 [Install]

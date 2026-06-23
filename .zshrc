@@ -48,8 +48,13 @@ alias clang-asan="LANG=Compiler clang -g -Og -O0 -fsanitize=address -fno-omit-fr
 alias gcc="LANG=Compiler gcc $CFLAGS $LDFLAGS"
 alias gcc-asan="LANG=Compiler gcc -g -Og -O0 -fsanitize=address -fno-omit-frame-pointer"
 
+# alias tclsh="rlwrap -r -c tclsh"
+# alias sbcl="rlwrap -r -c sbcl"
+# alias sbcl-swank="sbcl --eval '(ql:quickload :swank)'  --eval '(swank:create-server :dont-close t)'"
+
 export GDBHISTFILE=~/.gdb_history
 
+export PATH=~/.local/share/coursier/bin:$PATH
 export PATH=~/.nimble/bin:$PATH
 export PATH=~/.cargo/bin:$PATH
 
@@ -61,8 +66,6 @@ export LD_LIBRARY_PATH=~/.local/lib:$LD_LIBRARY_PATH
 export C_INCLUDE_PATH=$C_INCLUDE_PATH:/opt/raylib/include
 export LIBRARY_PATH=$LIBRARY_PATH:/opt/raylib/lib
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/raylib/lib
-
-# alias tclsh="rlwrap -r -c tclsh"
 
 export PATH=$PATH:.
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:.

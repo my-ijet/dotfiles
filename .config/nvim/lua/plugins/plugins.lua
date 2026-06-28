@@ -25,8 +25,6 @@ return {
         "desktop",
         "lua",
         "python",
-        "nim",
-        "nim_format_string",
         "bash",
         "zsh",
         "make",
@@ -98,17 +96,6 @@ return {
 
   {
     "oils-for-unix/oils.vim",
-  },
-  {
-    "alaviss/nim.nvim",
-    ft = { "nim", "nims", "nimble" },
-    config = function()
-      vim.api.nvim_create_autocmd("VimEnter", {
-        callback = function()
-          vim.opt.foldenable = false
-        end,
-      })
-    end,
   },
   {
     "zenc-lang/zenc.vim",

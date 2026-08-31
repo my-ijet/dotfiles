@@ -52,20 +52,20 @@ alias gcc-asan="LANG=Compiler gcc -g -Og -O0 -fsanitize=address -fno-omit-frame-
 # alias sbcl="rlwrap -r -c sbcl"
 # alias sbcl-swank="sbcl --eval '(ql:quickload :swank)'  --eval '(swank:create-server :dont-close t)'"
 
-export GDBHISTFILE=~/.gdb_history
+export GDBHISTFILE="$HOME/.gdb_history"
 
-export PATH=~/.local/share/coursier/bin:$PATH
-export PATH=~/.nimble/bin:$PATH
-export PATH=~/.cargo/bin:$PATH
+export PATH="$HOME/.local/share/coursier/bin:$PATH"
+export PATH="$HOME/.nimble/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 
-export PATH=~/.local/bin:$PATH
-export C_INCLUDE_PATH=~/.local/include:$C_INCLUDE_PATH
-export LIBRARY_PATH=~/.local/lib:$LIBRARY_PATH
-export LD_LIBRARY_PATH=~/.local/lib:$LD_LIBRARY_PATH
+export PATH="$HOME/.local/bin:$PATH"
+export C_INCLUDE_PATH="$HOME/.local/include:$C_INCLUDE_PATH"
+export LIBRARY_PATH="$HOME/.local/lib:$LIBRARY_PATH"
+export LD_LIBRARY_PATH="$HOME/.local/lib:$LD_LIBRARY_PATH"
 
-export C_INCLUDE_PATH=$C_INCLUDE_PATH:/opt/raylib/include
-export LIBRARY_PATH=$LIBRARY_PATH:/opt/raylib/lib
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/raylib/lib
+export C_INCLUDE_PATH="$C_INCLUDE_PATH:/opt/raylib/include"
+export LIBRARY_PATH="$LIBRARY_PATH:/opt/raylib/lib"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/raylib/lib"
 
 export PATH=$PATH:.
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:.

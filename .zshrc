@@ -23,8 +23,8 @@ alias s="sudo -E"
 
 alias pkgupd="yay -Syu"
 alias pkgi="yay -S"
-alias pkgrm="yay -Rsn"
-alias pkgcleanup="yay -Rsn $(yay -Qtdq)"
+alias pkgrm="yay -Rns"
+alias pkgcleanup="yay -Qdtq | yay -Rns -"
 alias pkgcleancache="sudo pacman -Scc"
 alias pacmanfix="sudo rm /var/lib/pacman/db.lck"
 

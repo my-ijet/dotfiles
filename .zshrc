@@ -13,62 +13,55 @@ USE_POWERLINE="true"
 HAS_WIDECHARS="false"
 
 source /usr/share/cachyos-zsh-config/cachyos-config.zsh
+unsetopt \
+  histverify\
+  correctall\
+  caseglob\
+  beep\
+  histbeep\
+  listbeep\
+
+setopt \
+  autocd\
+  autopushd\
+  pushdminus\
+  pushdignoredups\
+  \
+  alwaystoend\
+  completeinword\
+  \
+  extendedhistory\
+  sharehistory\
+  \
+  histignorealldups\
+  histexpiredupsfirst\
+  histignorespace\
+  histreduceblanks\
+  \
+  interactivecomments\
+  promptsubst\
+  zle\
+  noflowcontrol\
+  \
+  longlistjobs\
+  nopromptcr\
+  nopromptsp\
+  \
+  extended_glob\
+  globstarshort\
+  numericglobsort\
+  autonamedirs\
+  braceccl\
+  cdsilent\
+  \
+  vi\
+  # printexitvalue\
+
+
+[[ -f ~/.aliases ]] && source ~/.aliases
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-
-export TIME_STYLE=long-iso
-
-alias s="sudo -E"
-
-alias pkgupd="yay -Syu"
-alias pkgi="yay -S"
-alias pkgrm="yay -Rns"
-alias pkgcleanup="yay -Qdtq | yay -Rns -"
-alias pkgcleancache="sudo pacman -Scc"
-alias pacmanfix="sudo rm /var/lib/pacman/db.lck"
-
-alias ls="eza -1 --group-directories-first --icons --time-style=long-iso"
-alias lsl="ls -l --no-permissions --no-user --no-time"
-alias tree="ls --tree"
-# alias ls="ls -oh --color"
-
-alias mkdir="mkdir -p"
-
-alias dm="yadm"
-alias ed="nvim"
-alias sued="sudoedit"
-# alias ed="emacsclient -t"
-# alias ed="emacs -nw"
-alias emacs-doom="~/.config/emacs/bin/doom"
-
-# alias tcc="LANG=Compiler tcc -Wall"
-alias clang="LANG=Compiler clang $CFLAGS $LDFLAGS"
-alias clang-asan="LANG=Compiler clang -g -Og -O0 -fsanitize=address -fno-omit-frame-pointer"
-alias gcc="LANG=Compiler gcc $CFLAGS $LDFLAGS"
-alias gcc-asan="LANG=Compiler gcc -g -Og -O0 -fsanitize=address -fno-omit-frame-pointer"
-
-# alias tclsh="rlwrap -r -c tclsh"
-# alias sbcl="rlwrap -r -c sbcl"
-# alias sbcl-swank="sbcl --eval '(ql:quickload :swank)'  --eval '(swank:create-server :dont-close t)'"
-
-export GDBHISTFILE="$HOME/.gdb_history"
-
-export PATH="$HOME/.local/share/coursier/bin:$PATH"
-export PATH="$HOME/.nimble/bin:$PATH"
-export PATH="$HOME/.cargo/bin:$PATH"
-
-export PATH="$HOME/.local/bin:$PATH"
-export C_INCLUDE_PATH="$HOME/.local/include:$C_INCLUDE_PATH"
-export LIBRARY_PATH="$HOME/.local/lib:$LIBRARY_PATH"
-export LD_LIBRARY_PATH="$HOME/.local/lib:$LD_LIBRARY_PATH"
-
-export C_INCLUDE_PATH="$C_INCLUDE_PATH:/opt/raylib/include"
-export LIBRARY_PATH="$LIBRARY_PATH:/opt/raylib/lib"
-export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/raylib/lib"
-
-export PATH=$PATH:.
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:.
+[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 autoload -U compinit; compinit

@@ -1,0 +1,10 @@
+[Unit]
+Description=Start shutdown with notification
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/timed-shutdown.sh
+
+[Install]
+WantedBy=default.target
+

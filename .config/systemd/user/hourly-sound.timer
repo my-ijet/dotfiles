@@ -1,0 +1,10 @@
+[Unit]
+Description=Timer for hourly play freedesktop/complete.oga
+
+[Timer]
+OnCalendar=*-*-* *:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+

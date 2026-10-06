@@ -1,0 +1,7 @@
+[Unit]
+Description=Hourly play freedesktop/complete.oga
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+

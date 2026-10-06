@@ -50,6 +50,7 @@ setopt \
   extended_glob\
   globstarshort\
   numericglobsort\
+  shortrepeat\
   autonamedirs\
   braceccl\
   cdsilent\

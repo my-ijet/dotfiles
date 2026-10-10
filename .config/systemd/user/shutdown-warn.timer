@@ -1,8 +1,8 @@
 [Unit]
-Description=Shutdown on 21:00 everyday
+Description=Shutdown on 22:00 everyday
 
 [Timer]
-OnCalendar=*-*-* 20:55:00
+OnCalendar=*-*-* 21:55:00
 Persistent=true
 
 [Install]

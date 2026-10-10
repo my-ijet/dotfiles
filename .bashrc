@@ -84,6 +84,7 @@ unset use_color safe_term match_lhs sh
 # it regains control.  #65623
 # http://cnswww.cns.cwru.edu/~chet/bash/FAQ (E11)
 
+set -u
 shopt -s autocd
 shopt -s checkwinsize
 shopt -s expand_aliases

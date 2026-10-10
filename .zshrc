@@ -22,6 +22,7 @@ unsetopt \
   listbeep\
 
 setopt \
+  no_unset\
   autocd\
   autopushd\
   pushdminus\

@@ -4,7 +4,7 @@ return {
     lazy = false,
     -- Настройка: автоматически просить sudo при чтении/записи защищенных файлов
     init = function()
-      vim.g.suda_smart_edit = 1
+      vim.g.suda_smart_edit = true
     end,
   },
   {
@@ -45,9 +45,24 @@ return {
         "shellcheck",
         "shfmt",
         "flake8",
+        "basedpyright",
+        "nimlangserver",
       },
     },
   },
+
+  -- {"teal-language/vim-teal",
+  --  dependencies = {"dense-analysis/ale", "tpope/vim-endwise"}
+  -- },
+
+  {
+    "oils-for-unix/oils.vim",
+  },
+  {
+    "zenc-lang/zenc.vim",
+    ft = "zenc",
+  },
+
   {
     "stevearc/oil.nvim",
     ---@module 'oil'
@@ -90,18 +105,6 @@ return {
     -- dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if you prefer nvim-web-devicons
     -- Lazy loading is not recommended because it is very tricky to make it work correctly in all situations.
     lazy = false,
-  },
-
-  -- {"teal-language/vim-teal",
-  --  dependencies = {"dense-analysis/ale", "tpope/vim-endwise"}
-  -- },
-
-  {
-    "oils-for-unix/oils.vim",
-  },
-  {
-    "zenc-lang/zenc.vim",
-    ft = "zenc",
   },
   {
     "ej-shafran/compile-mode.nvim",
@@ -169,6 +172,7 @@ return {
         },
       }
       dap.configurations.nim = dap.configurations.c
+      dap.configurations.zenc = dap.configurations.c
     end,
   },
   {

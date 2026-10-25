@@ -27,11 +27,23 @@ alias sued="sudoedit "
 # alias ed="emacs -nw "
 alias emacs-doom="~/.config/emacs/bin/doom "
 
+CFLAGS="-march=native -mtune=native -O3 -fno-plt "
+WFLAGS="-Wall -Wextra -Wuninitialized -Wformat -Wformat-security -Wno-unused -Wno-sign-compare -Wno-sequence-point" # -Werror"
+LDFLAGS="-fuse-ld=mold"
 alias clang="LANG=Compiler clang $CFLAGS $LDFLAGS "
-alias clang-asan="LANG=Compiler clang -g -Og -O1 -fsanitize=address -fno-omit-frame-pointer "
+alias clang-check="clang -fsyntax-only $WFLAGS "
+alias clang-asan="clang -g -Og -O1 -fsanitize=address -fno-omit-frame-pointer "
 alias gcc="LANG=Compiler gcc $CFLAGS $LDFLAGS "
-alias gcc-asan="LANG=Compiler gcc -g -Og -O1 -fsanitize=address -fno-omit-frame-pointer "
+alias gcc-check="gcc -fsyntax-only $WFLAGS "
+alias gcc-asan="gcc -g -Og -O1 -fsanitize=address -fno-omit-frame-pointer "
 alias tcc="LANG=Compiler tcc "
+
+zc() {
+  LANG=Compiler command zc "$@" $LDFLAGS
+}
+zcr() {
+  zc "$@" --release -s -flto
+}
 
 alias nimony="/opt/nimony/bin/nimony "
 
@@ -44,8 +56,9 @@ export TIME_STYLE=long-iso
 
 export GDBHISTFILE="$HOME/.gdb_history"
 
-export PATH="$HOME/.nimble/bin:$PATH"
-export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$PATH:$HOME/.nimble/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:/opt/zenc-lang"
 
 export PATH="$HOME/.local/bin:$PATH"
 export C_INCLUDE_PATH="$HOME/.local/include:${C_INCLUDE_PATH:-}"

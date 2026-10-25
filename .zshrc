@@ -37,7 +37,6 @@ setopt \
   histignorealldups\
   histexpiredupsfirst\
   histignorespace\
-  histreduceblanks\
   \
   interactivecomments\
   promptsubst\
@@ -59,6 +58,7 @@ setopt \
   vi\
   # printexitvalue\
 
+fpath=(~/.zsh/completions $fpath)
 
 [[ -f ~/.aliases ]] && source ~/.aliases
 
@@ -68,3 +68,4 @@ setopt \
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 autoload -U compinit; compinit
 source /usr/share/zsh/plugins/fzf-tab-git/fzf-tab.plugin.zsh
+

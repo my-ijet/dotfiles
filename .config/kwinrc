@@ -56,7 +56,15 @@ windowRules=[ \n    {\n        "class": "haruna",\n        "tile": true\n    },\
 [Tiling][0b9b0129-9800-5676-b32e-540bfb6e89ea]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][29c58316-7eb6-492f-b642-94b1f78951bc][]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][29c58316-7eb6-492f-b642-94b1f78951bc][42f6e1d4-5126-42a7-a8a8-5e4b6a577ddd]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][314a040e-3ba9-4543-a763-08631cd7dfb2][]
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 

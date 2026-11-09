@@ -59,7 +59,7 @@ return {
     "oils-for-unix/oils.vim",
   },
   {
-    "zenc-lang/zenc.vim",
+    "zenc-lang-ce/zenc-vim",
     ft = "zenc",
   },
 

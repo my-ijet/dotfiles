@@ -1,0 +1,13 @@
+[General]
+autoIconSize=false
+groupingStrategy=0
+indicateAudioStreams=false
+interactiveMute=false
+launchers=applications:yandex-browser.desktop,applications:org.kde.dolphin.desktop,applications:kitty.desktop
+middleClick=1
+minimizeActiveTaskOnClick=false
+showToolTips=false
+showWorkspaces=false
+wheelCyclesTasks=true
+wheelEnabled=false
+wheelSwitchesWorkspaces=false

@@ -1,0 +1,13 @@
+[General]
+dimStrength=0.5
+searchCalculator=false
+searchFiles=false
+searchPackages=false
+searchWindows=false
+showFriends=false
+showGames=false
+showHomeDate=true
+showSidebarFriends=false
+showTopBarPower=false
+showTopBarSettings=false
+tileSize=48

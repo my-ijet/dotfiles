@@ -1,7 +1,10 @@
 [General]
+activeClick=1
 autoIconSize=false
+groupMode=2
 groupingStrategy=0
 indicateAudioStreams=false
+indicatorStyle=2
 interactiveMute=false
 launchers=applications:yandex-browser.desktop,applications:org.kde.dolphin.desktop,applications:kitty.desktop
 middleClick=1

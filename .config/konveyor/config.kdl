@@ -430,7 +430,6 @@ window-rule {
 window-rule {
     match app-id="^yandex-browser$"
     column-position "start"
-    open-maximized-to-edges true
     open-maximized true
 }
 
